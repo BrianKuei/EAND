@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.css" rel='stylesheet'>
+    <script src="https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>登入</title>
+    <style type="text/css">
+        body {
+            background-image: url("images/wood_1.png");
+        }
+
+        #bt:hover {
+            background-color: #fc924f;
+            transition-duration: 1s;
+            transition-delay: 0.1s;
+        }
+
+        .segment {
+            max-width: 500px;
+            height: 390px;
+        }
+
+        .kZenUV {
+            font: 300 normal 15px / 22px 'Gotham SSm A', 'Gotham SSm B', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #A1A1A1;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 11px;
+        }
+
+        .kZenUV:hover {
+            color: #fc924f;
+        }
+
+        /*   @media(min-width: 792px) {
+        .kZenUV {
+            margin-right: 115px;
+        }
+        .kZenUV:last-child {
+            margin-right: 0;
+        }
+    }*/
+    </style>
+</head>
+
+<body>
+    <!-- 主要容器 -->
+    <div class="ts narrow container">
+        <br>
+        <br>
+        <!-- 抬頭標題 -->
+        <h1 class="ts center aligned header" style="color:#fc721d;">
+            Welcome to E&D
+            <div class="sub header" style="color:#fc924f;">Login your account</div>
+        </h1>
+        <!-- / 抬頭標題 -->
+        <!-- 主要登入片段 -->
+        <div class="ts centered secondary segment">
+            <!-- 表單 -->
+            <form class="ts form">
+                <!-- 帳號欄位 -->
+                <div class="field" style="padding-top: 50px">
+                    <label>帳號</label>
+                    <input type="text" placeholder="">
+                </div>
+                <!-- / 帳號欄位 -->
+                <!-- 密碼欄位 -->
+                <div class="field">
+                    <label>密碼</label>
+                    <input type="password" placeholder="">
+                </div>
+                <!-- / 密碼欄位 -->
+                <!-- 登入按鈕 -->
+                <a href="時段選擇、店家列表 (8.27)(定案)/time_select.html" style="display:block">
+                    <button id="bt" type="button" class="ts fluid button">登入</button>
+                </a>
+                <!-- / 登入按鈕 -->
+            </form>
+            <!-- / 表單 -->
+            <div class="col-sm-6">
+                <a href="registration.html" class="kZenUV" style="text-align: center; display: block;">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>註冊</a>
+            </div>
+            <!-- 忘記密碼 -->
+            <div class="col-sm-6">
+                <a href="#" class="kZenUV" data-toggle="modal" data-target="#myModal" style="text-align: center; display: block;">
+                    <i class="fa fa-lock" aria-hidden="true"></i>忘記密碼</a>
+            </div>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">你忘記密碼了ＱＱ</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>讓粉專客服幫您解決</p>
+                            <a href="https://www.facebook.com/messages/t/Eat.and.Drink.at.home?locale=zh_TW" target="_blank">粉專我在這～～</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--忘記密碼-->
+        </div>
+        <!-- / 主要登入片段 -->
+    </div>
+    <!-- / 主要容器 -->
+</body>
+
+</html>

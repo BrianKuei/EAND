@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台灣鹽酥雞訂餐</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/js.js">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    @media (min-width: 300px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" class="navbar-brand" alt="e&d_logo_img" src="images/logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">吃喝不出門</a></li>
+                    <li>
+                        <input class="form-control input-sm" id="inputsm" type="text" placeholder="搜尋店家" style="margin-top: 10px">
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">修改資料</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img id="coffe" class="img-responsive img-circle center-block" src="images/台灣鹹酥雞.jpg" alt="鹽酥雞" style="width: 300px; height: 300px">
+    <div class="row text-lef">
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <iframe style="width: 100% !important; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7364.717292222096!2d120.595404!3d22.640413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e3ccacac32e03%3A0x9302252cd14b675c!2zOTEy5Y-w54Gj5bGP5p2x57ij5YWn5Z-U6YSJ5aO95q-U6LevNzQ36Jmf!5e0!3m2!1szh-TW!2stw!4v1505482547798" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <h1 id="about">關於我們</h1>
+            <p id="content">
+                暫時無內容
+            </p>
+            <h2 id="addr">地址： 912屏東縣內埔鄉壽比路747號</h2>
+            <!--     <h2 id="tel">電話： 0934-160031</h2> -->
+        </div>
+    </div>
+    <div class="menu1">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>10元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>百頁豆腐 (小) 10元/1個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雞脖子　 　10元/1個x</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>香腸　　　　</p>
+                        <p>10元/2個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>薯餅　　　　</p>
+                        <p>10元/1個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>芋頭餅　　　</p>
+                        <p>10元/2個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蘿蔔糕　　　</p>
+                        <p>10元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>米血　　　　</p>
+                        <p>10元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>米血　　　　</p>
+                        <p>10元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豆皮　　　　</p>
+                        <p>10元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>熱狗　　　　</p>
+                        <p>10元/2條</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豆干 (小)　　</p>
+                        <p>10元/2個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <h1>15元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>銀絲卷　　 </p>
+                        <p>15元/1條</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>百頁豆腐(大)</p>
+                        <p>15元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>芋頭條　　 </p>
+                        <p>15元/1條</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>米腸　　　</p>
+                        <p>15元/1條</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豆干(大)　</p>
+                        <p>15元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>皮蛋　　　</p>
+                        <p>15元/1顆</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>魚板　　　</p>
+                        <p>15元/2片</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>黑輪　　　</p>
+                        <p>15元/2片</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>甜不辣 　　</p>
+                        <p>15元/2片</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <h1>20元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雞屁股　　</p>
+                        <p>20元/1串</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雞心　　　</p>
+                        <p>20元/1串</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雞腱　　　</p>
+                        <p>20元/1串</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>貢丸　　　</p>
+                        <p>20元/1串</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>20元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>花枝丸　　</p>
+                        <p>20元/1串</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>黃色小丸子</p>
+                        <p>20元/1串</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>四季豆　　</p>
+                        <p>20元/1把</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>青椒　　　</p>
+                        <p>20元/1個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>小黃瓜　　</p>
+                        <p>20元/1個</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>金針菇　　</p>
+                        <p>20元/1包</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>香菇　　</p>
+                        <p>20元/1包</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>杏鮑菇　　</p>
+                        <p>20元/1包</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>玉米　　　</p>
+                        <p>20元/1條</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雞皮　　　</p>
+                        <p>20元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>波浪薯(脆薯)</p>
+                        <p>20元/1包</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>薯條(小)　</p>
+                        <p>20元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>地瓜條(小)　</p>
+                        <p>20元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <h1>30元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>薯條(大)　　</p>
+                        <p>30元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>地瓜條(大)　</p>
+                        <p>30元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>玉米筍　　</p>
+                        <p>30元/1盒</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鹽酥雞(小)</p>
+                        <p>30元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>炸魷魚(小)</p>
+                        <p>30元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>三角骨(小)</p>
+                        <p>30元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <h1>45元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>香雞排　　</p>
+                        <p>45元/1塊</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <h1>50元</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鹽酥雞(大)</p>
+                        <p>50元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>炸魷魚(大)</p>
+                        <p>50元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>三角骨(大)</p>
+                        <p>50元/1份</p>
+                        <input type="text" id="lamiteaNumId" style="width: 60px" placeholder="數量輸入">
+
+                    </div>
+                </div>
+                <button id="bttn" class="btn btn-warning" type="button" style="text-align: center;">確認送出</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

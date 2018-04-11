@@ -1,0 +1,1820 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>調色杯訂餐</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/js.js">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    @media (min-width: 300px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" class="navbar-brand" alt="e&d_logo_img" src="images/logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">吃喝不出門</a></li>
+                    <li>
+                        <input class="form-control input-sm" id="inputsm" type="text" placeholder="搜尋店家" style="margin-top: 10px">
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">修改資料</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img id="coffe" class="img-responsive img-circle center-block" src="images/調色杯.png" alt="倉咖啡" style="width: 300px; height: 300px">
+    <div class="row text-lef">
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <iframe style="width: 100% !important; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.3630024567324!2d120.59325911496069!3d22.640250485148076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e233546555267%3A0xb066ec0e8a25ad74!2zOTEy5Y-w5rm-5bGP5p2x57ij5YWn5Z-U6YSJ5aO95q-U6LevNzMy6Jmf!5e0!3m2!1szh-CN!2stw!4v1504804334272" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <h1 id="about">關於我們</h1>
+            <p id="content">暫時無內容</p>
+            <h2 id="addr">地址： 912屏東縣內埔鄉壽比路732號</h2>
+            <!--  <h2 id="tel">電話： 0983 789 106</h2> -->
+        </div>
+    </div>
+    <div class="menu1">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>新鮮好茶</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>拉米亞紅茶一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>古香紅茶一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>古香麥茶一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>冬瓜茶一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>霧杉綠茶一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雪嶺青茶一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>水萱烏龍一杯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea" style="margin-bottom: 250px">
+                <div class="realtextarea">
+                    <h1>新鮮好喝</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>梅子茶一杯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>仙草乾茶一杯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>龍眼蜜茶一杯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>沖繩茶一杯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬山粉圓一杯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu2">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>現做手調-鮮奶</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮奶茶一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>紅</option>
+                            <option>綠</option>
+                            <option>青</option>
+                            <option>烏</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>紅茶拿鐵一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>冬瓜拿鐵一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>綠豆沙牛奶一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多多拿鐵一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多酚拿鐵一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>阿華田拿鐵一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>新鮮益菌多</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>金蘋果綠茶一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多多綠一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多多百香一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多多蘆薈一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多多檸檬一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>多多葡萄柚一杯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>綠茶多酚一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬多酚一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu3">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>現做手調-口感</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>珍珠奶茶一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>椰果奶茶一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>ＱＱ茶一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>仙草奶凍茶一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>統一布丁茶一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>奶茶三兄弟一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>百香ＱＱ一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea">
+                <div class="realtextarea ">
+                    <h1>現做手調</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>現煮綠豆湯</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>綠豆珍珠</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>綠豆冰沙</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>梅子綠</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>百香綠</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蜂蜜</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>紅</option>
+                            <option>綠</option>
+                            <option>青</option>
+                            <option>烏</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>芒果綠</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>芒果青</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>阿華田</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蜂蜜蘆薈</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>柳橙綠</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu4">
+        <div class="col-sm-6">
+            <div class="textarea">
+                <div class="realtextarea ">
+                    <h1>現做手調-奶香</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>拉米亞奶茶</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>麥香奶茶</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>冬瓜奶茶</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>沖繩奶茶</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>焦糖奶茶</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>北海道奶茶</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>紅</option>
+                            <option>綠</option>
+                            <option>青</option>
+                            <option>烏</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>金蘋果奶茶</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea " style="margin-bottom: 150px ">
+                <div class="realtextarea ">
+                    <h1>新鮮水果汁</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>香蕉牛奶一杯</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option id="Small_size">小杯</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>奇異果汁一杯</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option id="Small_size">小杯</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>奇異果牛奶一杯</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option id="Small_size">小杯</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>西瓜汁一杯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option id="Small_size">小杯</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>西瓜牛奶一杯</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option id="Small_size">小杯</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>木瓜牛奶一杯</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option id="Small_size">小杯</option>
+                        </select>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu5">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>新鮮果漾</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨檸檬汁一杯</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬紅茶一杯</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬綠茶一杯</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬愛玉一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬梅子一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蜂蜜檸檬一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>冬瓜檸檬一杯</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>冬瓜檸檬一杯</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨金吉桔檸檬一杯</p>
+                        <label>40</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨葡萄柚汁一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨葡萄柚綠一杯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨葡萄柚蜜一杯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨葡萄柚茶一杯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鮮榨葡萄柚愛玉一杯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea" style="margin-bottom: 200px">
+                <div class="realtextarea">
+                    <h1>店長推薦</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>黃金綠一杯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>凍檸茶一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>翡翠檸檬一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>奇檸子綠一杯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>水果冰茶一杯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雪露咖啡一杯</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>翡翠多多一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>芒果微粒一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>微醺馬拉桑一杯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>共杯</p>
+                        <select>
+                            <option>全糖</option>
+                            <option>八分糖</option>
+                            <option>半糖</option>
+                            <option>少糖</option>
+                            <option>無糖</option>
+                        </select>
+                        <select>
+                            <option>正常冰</option>
+                            <option>少冰</option>
+                            <option>微冰</option>
+                            <option>去冰</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="textarea">
+                <div class="realtextarea">
+                    <h2 style="margin-bottom: 20px ">以上餐點確認送出後，就無法更改，請多注意<br>以上產品皆為大杯</h2>
+                    <button id="bttn" type="button" class="btn btn-warning">確認送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

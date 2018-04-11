@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>內埔牛肉麵 訂餐</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/js.js">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    @media (min-width: 300px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" class="navbar-brand" alt="e&d_logo_img" src="images/logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">吃喝不出門</a></li>
+                    <li>
+                        <input class="form-control input-sm" id="inputsm" type="text" placeholder="搜尋店家" style="margin-top: 10px">
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">修改資料</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img id="coffe" class="img-responsive img-circle center-block" src="images/內埔牛肉麵.gif" alt="內埔牛肉麵 " style="width: 300px; height: 300px">
+    <div class="row text-lef">
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <iframe style="width: 100% !important; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.4312073406713!2d120.59390731454484!3d22.63770593628365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e233577013a23%3A0x392a43681b2d241a!2zOTEy5bGP5p2x57ij5YWn5Z-U6YSJ5aO95q-U6LevNjMx6Jmf!5e0!3m2!1szh-TW!2stw!4v1504446858582" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <h1 id="about">關於我們</h1>
+            <p id="content">暫時無內容</p>
+            <h2 id="addr">地址： 91247屏東縣內埔鄉壽比路631號</h2>
+            <!--     <h2 id="tel">電話： 0934-160031</h2> -->
+        </div>
+    </div>
+    <div class="menu1">
+        <div class="col-sm-12">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>飯類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜牛肉炒飯</p>
+                        <label>75</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜豬肉炒飯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉炒飯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豬肉炒飯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>麻油炒飯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉燴飯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豬肉燴飯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蔥爆牛肉飯</p>
+                        <label>75</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蔥爆豬肉飯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蔥爆雞肉飯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>咔啦雞腿</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                        <br>
+                        <input type="checkbox" name="che">
+                        <p>+咖哩10元</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>起司豬排飯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                        <br>
+                        <input type="checkbox" name="che">
+                        <p>+咖哩10元</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>日式豬排飯</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                        <br>
+                        <input type="checkbox" name="che">
+                        <p>+咖哩10元</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉飯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>腿排飯</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豬肉飯</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜豬肉飯</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>肉燥飯</p>
+                        <label>25</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>咖哩飯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蛋花湯餃</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="textarea">
+                <div class="realtextarea">
+                    <h2 style="margin-bottom: 20px ">以上餐點確認送出後，就無法更改，請多注意<br>以上產品皆為大份/杯</h2>
+                    <button id="bttn" type="button" class="btn btn-warning">確認送出</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-sm-6">
+            <div class="textarea " style="margin-bottom: 550px">
+                <div class="realtextarea ">
+                    <h1>麵類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉麵</p>
+                        <label>80</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉拉麵</p>
+                        <label>80</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜牛肉麵</p>
+                        <label>90</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉湯麵</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉湯餃</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉炒麵</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豬肉炒麵</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>餛飩麵</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>傻瓜麵</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉燴米粉</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>豬肉燴米粉</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>炒烏龍麵</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                        <br>
+                        <input type="checkbox" name="che">
+                        <p>+麵10元</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>咖哩炒麵</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                        <br>
+                        <input type="checkbox" name="che">
+                        <p>+麵10元</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>乾撈麵</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                        <br>
+                        <input type="checkbox" name="che">
+                        <p>+麵10元</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- <div class="menu2">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>泡麵類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉泡麵（加蛋）</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>肉骨泡麵（加蛋）</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>肉燥泡麵（加蛋）</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea " style="margin-bottom: 400px">
+                <div class="realtextarea ">
+                    <h1>湯類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蛋花湯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>餛飩湯</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--  <div class="menu3">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>鍋燒類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鍋燒雞絲麵</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鍋燒烏龍麵</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鍋燒意麵</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鍋燒泡飯</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>鍋燒泡麵</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜鍋燒意麵</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜鍋燒雞絲</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜鍋燒烏龍</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>泡菜鍋燒冬粉</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>                   
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>單點類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>雞腿</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>咔拉雞腿</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>起司豬</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>白飯</p>
+                        <label>10</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>荷包蛋</p>
+                        <label>10</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>合菜</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>水餃（每粒）</p>
+                        <label>3.5</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>顆（最少10）顆</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

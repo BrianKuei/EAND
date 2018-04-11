@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/tocas.css">
+    <script src="https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>註冊會員</title>
+    <style type="text/css">
+        body {
+            background-image: url("images/wood_1.png");
+            font-size: 15px;
+        }
+
+        .segment {
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 穹頂 -->
+    <!-- <div class="ts fluid basic link big menu">
+        <div class="ts very narrow container">
+            <a href="#!" class="item">吃喝不出門</a>
+        </div>
+    </div> -->
+    <!-- / 穹頂 -->
+    <!-- 聚焦看板 -->
+    <div class="ts padded horizontally fitted fluid slate">
+        <div class="ts very narrow container">
+            <!-- 標題 -->
+            <h1 class="ts header">
+                註冊會員
+                <div class="sub header">初次見面，歡迎加入吃喝不出門！</div>
+            </h1>
+            <!-- / 標題 -->
+        </div>
+    </div>
+    <!-- / 聚焦看板 -->
+    <!-- 主要容器 -->
+    <div class="ts very narrow container">
+        <br>
+        <!-- 表單 -->
+        <form class="ts relaxed form">
+            <!-- 欄位群組 -->
+            <div class="fields">
+                <!-- 單個欄位 -->
+                <div class="field">
+                    <label style="color: #fb6e14">學號</label>
+                    <input type="text">
+                    <small style="color: #fb6e14">請使用真實學號</small>
+                </div>
+                <!-- / 單個欄位 -->
+                <!-- 單個欄位 -->
+                <div class="field">
+                    <label style="color: #fb6e14">姓名</label>
+                    <input type="text">
+                    <small style="color: #fb6e14">請使用真實姓名</small>
+                </div>
+                <!-- / 單個欄位 -->
+            </div>
+            <!-- / 欄位群組 -->
+            <!-- 單個欄位 -->
+            <div class="field">
+                <label style="color: #fb6e14">電子郵件地址</label>
+                <input type="text">
+            </div>
+            <!-- / 單個欄位 -->
+            <!-- 單個欄位 -->
+            <div class="field">
+                <label style="color: #fb6e14">電話</label>
+                <input type="text">
+            </div>
+            <!-- / 單個欄位 -->
+            <!-- 單個欄位 -->
+            <div class="field">
+                <label style="color: #fb6e14">密碼</label>
+                <input type="password" placeholder="">
+                <small style="color: #fb6e14">僅能是英文字母和數字，且最少 5 字，最多 20 字。</small>
+            </div>
+            <!-- /單個欄位 -->
+            <!-- 欄位群組 -->
+            <div class="fields">
+                <!-- 單個欄位 -->
+                <div class="field">
+                    <label style="color: #fb6e14">生日</label>
+                    <!-- 下拉式選單群組 -->
+                    <div class="ts relaxed fluid separated dropdowns">
+                        <select>
+                            <option value="">年</option>
+                            <!-- <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option> -->
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1976">1976</option>
+                            <option value="1975">1975</option>
+                            <option value="1974">1974</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1969">1969</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1964">1964</option>
+                            <option value="1963">1963</option>
+                            <option value="1962">1962</option>
+                            <option value="1961">1961</option>
+                            <option value="1960">1960</option>
+                            <option value="1959">1959</option>
+                            <option value="1958">1958</option>
+                            <option value="1957">1957</option>
+                            <option value="1956">1956</option>
+                            <option value="1955">1955</option>
+                            <option value="1954">1954</option>
+                            <option value="1953">1953</option>
+                            <option value="1952">1952</option>
+                            <option value="1951">1951</option>
+                            <option value="1950">1950</option>
+                            <option value="1949">1949</option>
+                            <option value="1948">1948</option>
+                            <option value="1947">1947</option>
+                            <option value="1946">1946</option>
+                            <option value="1945">1945</option>
+                            <option value="1944">1944</option>
+                            <option value="1943">1943</option>
+                            <option value="1942">1942</option>
+                            <option value="1941">1941</option>
+                            <option value="1940">1940</option>
+                            <option value="1939">1939</option>
+                            <option value="1938">1938</option>
+                            <option value="1937">1937</option>
+                            <option value="1936">1936</option>
+                            <option value="1935">1935</option>
+                            <option value="1934">1934</option>
+                            <option value="1933">1933</option>
+                            <option value="1932">1932</option>
+                            <option value="1931">1931</option>
+                            <option value="1930">1930</option>
+                            <option value="1929">1929</option>
+                            <option value="1928">1928</option>
+                            <option value="1927">1927</option>
+                            <option value="1926">1926</option>
+                            <option value="1925">1925</option>
+                            <option value="1924">1924</option>
+                            <option value="1923">1923</option>
+                            <option value="1922">1922</option>
+                            <option value="1921">1921</option>
+                            <option value="1920">1920</option>
+                            <option value="1919">1919</option>
+                            <option value="1918">1918</option>
+                            <option value="1917">1917</option>
+                            <option value="1916">1916</option>
+                            <option value="1915">1915</option>
+                            <option value="1914">1914</option>
+                            <option value="1913">1913</option>
+                            <option value="1912">1912</option>
+                            <option value="1911">1911</option>
+                        </select>
+                        <select>
+                            <option value="">月</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select>
+                            <option value="">日</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <!-- / 下拉式選單群組 -->
+                    <small style="color: #fb6e14">提醒您，為了維護您的會員權益，生日輸入確認後，若需修改請洽客服。</small>
+                </div>
+                <!-- / 單個欄位 -->
+                <!-- 單個欄位 -->
+                <div class="field">
+                    <label style="color: #fb6e14">性別</label>
+                    <!-- 單選方塊群組 -->
+                    <div class="ts center aligned compact horizontal checkboxes" style="padding-top: 20px ">
+                        <div class="ts radio checkbox">
+                            <input type="radio" name="gender" id="genderMale" checked="checked">
+                            <label for="genderMale" style="color: #fb6e14;">男性</label>
+                        </div>
+                        <div class="ts radio checkbox">
+                            <input type="radio" name="gender" id="genderFemale">
+                            <label for="genderFemale" style="color: #fb6e14; margin: 15px 0 0 15px">女性</label>
+                        </div>
+                    </div>
+                    <!-- / 單選方塊群組 -->
+                </div>
+                <!-- / 單個欄位 -->
+            </div>
+            <!-- / 欄位群組 -->
+            <!-- 按鈕 -->
+            <button class="ts fluid primary button" type="button" style=" background: #fb6e14; border: #fb6e14">註冊</button>
+            <!-- / 按鈕 -->
+            <!-- 提示 -->
+            <div class="ts center aligned mini basic fitted message">
+                <p>按下「下一步」表示您也接受
+                    <button type="button" data-toggle="modal" data-target="#myModal">「個人隱私政策」</button>
+                    <button type="button" data-toggle="modal" data-target="#myModal2">「使用者規範」</button>
+                </p>
+            </div>
+            <!-- / 提示 -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">喝不出門 隱私權政策</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                上次修改日期：2017年8月22日
+                                <br>
+                                <br> 您可以用許多不同方式使用我們的服務：您可以利用電腦、手機向我們訂餐。您與我們分享的資訊(例如在建立帳戶和訂餐時的紀錄)能協助吃喝不出門服務變得更好，當您使用服務時，我們希望您清楚了解我們使用資訊的方式，以及我們保障您隱私權的各種措施。當您瀏覽或使用本網站提供之服務，即表示您同意吃喝不出門收集、使用與轉載您提供的個人資訊。
+                                <br>
+                                <br> 我們的《隱私權政策》說明了下列事項：
+                                <ul>
+                                    <li>我們收集的資訊類型和收集理由。</li>
+                                    <li>我們使用資訊的方式。</li>
+                                    <li>我們提供的選項，包括存取與更新資訊的方式。</li>
+                                </ul>
+                                <br>
+                                <br> 我們盡可能以簡單易懂的文字表達，吃喝不出門非常重視您的隱私權，因此不論您是剛開始使用吃喝不出門，或是已使用一段時間，都請撥冗了解我們的做法；如有任何疑慮，歡迎與我們聯絡。
+                                <br>
+                                <br> 我們收集資訊
+                                <br>我們收集資訊是為了向所有使用者提供更優質的服務；這些資訊可協助我們判斷基本設定，甚至分析更複雜的內容(例如您偏好的餐點)。
+                                <br>
+                                <br> 吃喝不出門收集資訊的管道如下：
+                                <ul>
+                                    <li>您提供的資訊。舉例來說，吃喝不出門的服務都必須申請帳戶才能使用。在申請的過程中，我們會請您提供姓名、電子郵件、地址、電話號碼等個人資訊，儲存在您的帳戶中。</li>
+                                    <li>我們經由您使用吃喝不出門服務而取得的資訊。我們會針對您使用的服務和使用方式收集相關資訊，例如您所訂的餐點、點擊吃喝不出門所提供的廣告。</li>
+                                </ul>
+                                <br>
+                                <br> 我們如何使用收集到的資訊
+                                <br> 我們會將收集自吃喝不出門各項服務的資訊用於提供、維持、保護與改善服務、開發新的服務，以及保護吃喝不出門和吃喝不出門使用者
+                                <br>
+                                <br>隱私權條款變更
+                                <br> 吃喝不出門保留權力變更任何本隱私權條款的內容，若任何變動將經由本網站告知。
+                                <br>
+                                <br> 聯絡我們
+                                <br>如您對您的個人資訊有任何想法、建議或要求，歡迎寄信到
+                                <a href="mailto:eanddathome@gmail.com">eanddathome@gmail.com</a>告訴我們。
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">吃喝不出門 服務條款</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                上次修改日期：2017年8月27日
+                                <br>
+                                <br> 在您使用吃喝不出門的產品和服務前，請詳閱以下的服務條款。不論是透過電話、網站或是APP，只要您使用產品和服務，就表示您同意本條款。
+                                <br>
+                                <br> 我們的《服務條款》說明了下列事項：
+                                <ul>
+                                    <li>本服務條款的定義。</li>
+                                    <li>服務條款內容。</li>
+                                    <li>其他事項。</li>
+                                </ul>
+                                <br>
+                                <br>我們盡可能以簡單易懂的文字表達，吃喝不出門非常重視用戶體驗，因此不論您是剛開始使用吃喝不出門，或是已使用一段時間，都請撥冗了解我們的做法；如有任何疑慮，歡迎與我們聯絡。
+                                <br>
+                                <br>本服務條款的定義
+                                <br>
+                                <ul>
+                                    <li>「隱私權條款」是指本網站如何處理客戶於使用本網站服務時，所蒐集、留存的個人資料。</li>
+                                    <li>本文提及的「您」為任何使用本網站之服務或訂購商品者。</li>
+                                    <li>本文提及的「我們」為本公司「吃喝不出門」。</li>
+                                    <li>「產品」為從本網站提供或出售之產品。</li>
+                                    <li>「服務」為經由本網站所提供之服務。</li>
+                                    <li>「特約店家」為第三方公司同意提供產品和服務給吃喝不出門。</li>
+                                    <li>「餐點外送」為將食物以任何方式送達協約地點之行為。</li>
+                                    <li>「網站」代表本網站(http://www.＿＿＿＿＿＿＿＿)</li>
+                                </ul>
+                                <br>
+                                <br>
+                                <br> 服務條款內容：
+                                <br>
+                                <ul>
+                                    <li>於本網站完成訂購後，即代表您委託吃喝不出門處理訂餐事宜，包括您的訂單轉交給合作餐廳。而關於訂購餐點的準備則交由各餐廳負責。您同意您所提供的資料為真實並確認您有足夠的資金支付您的訂單。</li>
+                                    <li>您保證當您使用餐點外送，產品和服務為個人或團體使用，您所購買的產品不得轉售。</li>
+                                    <li>網站部分產品只適合特定年齡層使用，凡謊報年齡者須自行負擔法律責任。</li>
+                                    <li>當您從本網站訂餐時您會需要提供電子信箱及密碼，您需要確保您的個人資料和密碼等資料的安全，並不提供資料給第三方。</li>
+                                    <li>在我方的權力內，我們將採取所有合理的注意事項以保存您的訂單和支付安全之細節，如果第三方在未授權的情形下使用您的資料使用本網站，並在我方沒有疏失的情況下，我方將不負責您的損失。</li>
+                                    <li>您的訂單是我們和任何有參與的餐廳共同負責，我們將確保產品的安全性和運送服務。當您確認並送出訂單後，除了不可抗力因素外，我們將在40分鐘左右為您送達(不可抗力因素包含塞車、店家滿單等均會造成到貨時間延遲)。</li>
+                                    <li>如因店家供貨造成交貨延遲，我方將不負擔其責任。</li>
+                                    <li>若要修改或取消訂單，請私訊吃喝不出門的粉絲專業，我們將為您即時更正，但若產品正在製作或是已製作完成，您則不能取消訂單。</li>
+                                    <li>若店家提供錯誤產品，您可以拒絕此產品，我們將回收並退費。</li>
+                                    <li>若下訂店家已售罄產品，我們將來電告知。</li>
+                                    <li>在網站上的售價皆經過我們與店家確認，而我們仍保留變動價格之權利，最後結帳頁面會顯示您的產品價格和外送費用，我們保留出售產品和提供服務和停止對店家之服務的權利。</li>
+                                    <li>所有商品售價將與實體店面一致，但可能不包括實體店面折扣。</li>
+                                    <li>所訂餐點須以現金與外送員當場結清，事後不得提出異議。</li>
+                                    <li>如您無法準時交貨，我們每次經過您的所在地會再與您聯絡，但我們不能保證其產品之新鮮度、溫度等產品狀態完好。</li>
+                                    <li>若您在當日訂餐未取(賒帳視為訂餐未取)，我們將計點乙次，每月超過3次將鎖定帳號，直到下個月開始重新計算。</li>
+                                    <li>如您對您的個人資訊有任何想法、建議或要求，歡迎寄信到
+                                        <a href="mailto:eanddathome@gmail.com">eanddathome@gmail.com</a>告訴我們。</li>
+                                    <li>我們將進我們所能確保網站信息正確性，若信息有誤歡迎隨時來信告知。</li>
+                                    <li>我們將進我們所能確保網站信息安全性，但我們無法保證伺服器內含病毒或該網站的可靠性，我們在此保留權力不做任何擔保。</li>
+                                    <li>我們不承擔因我們網站造成的任何故障、延誤、資料丟失、病毒或其他汙染、破壞屬性的任何責任。</li>
+                                    <li>若發現濫用、變造、仿製折價券，吃喝不出門得立即停止與拒絕繼續提供服務，除此之外吃喝不出門保留對違規或濫用者損失之追訴權。</li>
+                                    <li>我們不承擔任何現行法律允許範圍下關於的服務和商品供應之責任，這並不影響您作為消費者的法定權利。如果我們發現任何損失和傷害承擔責任，這種責任是在您所支付金額的有關商品和服務。我們將不承擔您可能得到的間接損失，包括利潤等。此責任限制並不適用於人身傷害或死亡所產生的直接損失。</li>
+                                    <li>吃喝不出門有權在任何時間不另行告知的情況下撤銷活動優惠。</li>
+                                    <li>所有價格以新台幣計價。</li>
+                                    <li>根據相關條款和條件，我們保留於任何時間改變我們所提供的服務內容和服務條款內容的權利，我們所做的任何異動不需經過您的同意或另行通知您。</li>
+                                    <li>禁止使用者在我們的網站使用自動化或外掛補丁，違者帳戶將會封鎖。</li>
+                                    <li>禁止使用者從本網站收集其他使用者個資和破解、入侵本網站。</li>
+                                    <li>禁止未經授權利用本網站營利。</li>
+                                    <li>若本網站內任何條款或協議與服務條款牴觸，均以服務條款為準。</li>
+                                    <li>若本條款與中華民國法律相牴觸則該條款無效，其餘未牴觸依然生效。</li>
+                                    <li>若本網站受到侵害而我方延遲或未執行我方權力與求償，皆不代表我方放棄此類權力與求償，除非我方書面同意放棄。</li>
+                                    <li>本條款將依照中華民國法律解釋與管轄，屏東法院為唯一管轄法院。</li>
+                                </ul>
+                                針對以上條款，在不違法違規的情況下本公司擁有全部解釋權
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- / 表單 -->
+
+        <!-- / 主要容器 -->
+</body>
+
+</html>

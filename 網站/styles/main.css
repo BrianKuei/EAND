@@ -1,0 +1,145 @@
+/*html,
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}*/
+
+body {
+    background-size: cover;
+    background: #fff url("../images/wood_1.png") fixed;
+    font-family: "Merriweather", serif;
+}
+
+nav {
+    position: fixed;
+    background-color: #fff;
+}
+
+
+/*.navbar-offset {
+    margin-top: -5rem;
+    padding-top: 5rem;
+}*/
+
+.textarea {
+    border: 24px solid white;
+    background-color: #eee;
+    opacity: 0.9;
+    width: 70%;
+    max-width: 45rem;
+    margin: 55px auto 0;
+}
+
+.realtextarea {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(20, 20, 24);
+    margin: 1rem 0;
+}
+
+h3 {
+    font-family: Roboto;
+    text-align: left;
+    color: #364F6B;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 0.25rem;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    height: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.right {
+    padding-left: 10px;
+    border-left: 3px solid #ccc;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    opacity: 1;
+    display: inline;
+    font-size: 22px;
+}
+
+pre {
+    font-family: 'Lato', sans-serif;
+    display: inline;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+    font-size: 1.5rem;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    opacity: 1;
+    display: inline;
+    font-size: 16px;
+}
+
+.title {
+    margin-top: 4rem;
+}
+
+.final {
+    text-align: center;
+    color: rgb(140, 114, 221);
+    padding: 2rem;
+}
+
+.price {
+    position: inherit;
+    right: 0px;
+}
+
+.alert {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#about {
+    color: #fff;
+}
+
+#content {
+    color: #ddd;
+}
+
+#addr {
+    color: #fff;
+}
+
+#tel {
+    color: #fff;
+}
+
+#bttn {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    padding: 0;
+    width: 100px;
+    height: 60px
+}
+
+
+/*#coffe {
+    display: block;
+    margin: 50px auto 0;
+    width: 40%;
+}*/

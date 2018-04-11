@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>倉咖啡訂餐</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/js.js">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    @media (min-width: 300px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" class="navbar-brand" alt="e&d_logo_img" src="images/logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">吃喝不出門</a></li>
+                    <li>
+                        <input class="form-control input-sm" id="inputsm" type="text" placeholder="搜尋店家" style="margin-top: 10px">
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">修改資料</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footer">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img id="coffe" class="img-responsive img-circle center-block" src="images/倉咖啡.png" alt="倉咖啡" style="width: 300px; height: 300px">
+    <div class="row text-lef">
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <iframe style="width: 100% !important; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.4075935658198!2d120.59379995010586!3d22.63858693617853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb1f7345767efa561!2z5YCJ5ZKW5ZWh!5e0!3m2!1szh-TW!2stw!4v1505276128934" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6" style="padding: 20px 15px 0 15px">
+            <h1 id="about">關於我們</h1>
+            <p id="content">　　本店是主打平價精品咖啡，推廣不同咖啡生豆產區的特有風味，店內的義式咖啡品項包含美式咖啡、原味拿鐵咖啡、風味拿鐵咖啡、摩卡可可…… 本店美式咖啡與市售黑咖啡相比少了難聞的焦嗆味以及不舒服的澀感，拿鐵咖啡則是使用100%鮮奶搭配Espresso製作，不習慣無糖的你也可以選擇(香草/焦糖/榛果)等等風味拿鐵或是搭配手工製作的生乳酪蛋糕哦!
+            </p>
+            <h2 id="addr">地址： 912屏東縣內埔鄉壽比路680號</h2>
+            <!--     <h2 id="tel">電話： 0934-160031</h2> -->
+        </div>
+    </div>
+    <div class="menu1">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>手沖黑咖啡</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>當日黑咖啡</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <h3>當日推薦咖啡豆</h3>
+                    <br>
+                </div>
+                <h1>咖啡飲品</h1>
+                <div class="realtextarea ">
+                    <div class="alert alert-info " role="alert ">
+                        <p>美式黑咖啡</p>
+                        <label>55</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>拿鐵咖啡</p>
+                        <label>75</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>香草拿鐵</p>
+                        <label>80</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>焦糖拿鐵</p>
+                        <label>80</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>榛果拿鐵</p>
+                        <label>80</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>摩卡可可</p>
+                        <label>85</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>檸檬冰咖啡</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                        <select>
+                            <option>冷</option>
+                            <option>熱</option>
+                        </select>
+                    </div>
+                    <br>
+                    <h1>手工甜點類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>(當日隨機限量)</p>
+                        <label>時價</label>
+                        <p></p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <br>
+                    <h1>帕里尼</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>巧克力帕里尼</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>花生醬帕里尼</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>起士兄弟帕里尼</p>
+                        <label>50</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>德式香腸起士帕里尼</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>培根花生醬帕里尼</p>
+                        <label>65</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>大食客帕里尼</p>
+                        <label>80</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>非咖啡飲品</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>可可歐蕾</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>抹茶歐蕾</p>
+                        <label>70</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>柚香檸檬茶</p>
+                        <label>60</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <br>
+                    <h1>健康果醋</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蘋果玫瑰醋</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>荔枝果醋</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>青梅果醋</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蔓越莓果醋</p>
+                        <label>45</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>杯</p>
+                    </div>
+                    <h3>以上飲品限定微糖微冰</h3>
+                </div>
+            </div>
+            <div class="textarea">
+                <div class="realtextarea">
+                    <h1>※注意※</h1>
+                    <h2 style="margin-bottom: 100px">
+                        以上飲品均為大杯(500cc)<br>
+                        餐點確認送出後<br>
+                        若需更改或取消<br>
+                        請聯絡吃喝不出門粉絲團
+                    </h2>
+                    <button id="bttn" type="button" class="btn btn-warning">確認送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="menu2">
+        <div class="col-sm-6">
+            <div class="textarea ">
+                <div class="realtextarea ">
+                    <h1>泡麵類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>牛肉泡麵（加蛋）</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>肉骨泡麵（加蛋）</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>肉燥泡麵（加蛋）</p>
+                        <label>35</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="textarea " style="margin-bottom: 400px">
+                <div class="realtextarea ">
+                    <h1>湯類</h1>
+                    <div class="alert alert-info " role="alert ">
+                        <p>蛋花湯</p>
+                        <label>20</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <div class="alert alert-info " role="alert ">
+                        <p>餛飩湯</p>
+                        <label>30</label>
+                        <p>元，</p>
+                        <input type="text" id="lamiteaNumId" style="width: 50px">
+                        <p>份</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
